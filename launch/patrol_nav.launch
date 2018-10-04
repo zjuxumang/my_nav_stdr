@@ -1,8 +1,8 @@
 <launch>
 
   <!-- startup patrol navigation node -->
-  <node pkg="my_nav" type="patrol_nav.py" name="patrol_nav_node" output="screen" >
-    <param name="rest_time"     value="5" />
+  <node pkg="my_nav_stdr" type="patrol_nav.py" name="patrol_nav_node" output="screen" >
+    <param name="rest_time"     value="3" />
     <param name="keep_patrol"   value="true" />
     <param name="random_patrol" value="false" />
     <param name="patrol_type"   value="0" />
