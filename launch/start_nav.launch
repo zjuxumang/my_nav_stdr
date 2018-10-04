@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find my_nav_stdr)/launch/my_server.launch" />
+    <include file="$(find my_nav_stdr)/launch/move_base.launch" />
+    <include file="$(find my_nav_stdr)/launch/amcl.launch" />
+</launch>

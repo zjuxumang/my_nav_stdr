@@ -1,0 +1,22 @@
+footprint: [[0.2, -0.2], [-0.2, -0.2], [-0.2, 0.2],[0.2, 0.2]] #机器人为矩形，设置机器的在坐标系内所占用的面积
+
+obstacle_layer:
+  enabled: true
+  combination_method: 1
+  track_unknown_space: true
+  obstacle_range: 3.5
+  raytrace_range: 5.5
+  observation_sources: laser_scan_sensor #只关注激光雷达的数据
+  laser_scan_sensor: {sensor_frame: /robot0_laser_0, 
+                    data_type: LaserScan, 
+                    topic: /robot0/laser_0, 
+                    marking: true, clearing: true,
+                    inf_is_valid: true} #设定激光雷达的相关参数
+inflation_layer:
+  enabled: true
+  cost_scaling_factor: 10.0
+  inflation_radius: 0.45
+ 
+static_layer:
+  enabled: true
+
