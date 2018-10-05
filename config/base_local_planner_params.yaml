@@ -26,8 +26,6 @@ DWAPlannerROS:
   vx_samples: 6    # default 3
   vy_samples: 1    # diff drive robot, there is only one sample
   vth_samples: 20  # 20
-  controller_frequency: 2.0
-  planner_frequency: 1.0
  
 # Trajectory Scoring Parameters
   path_distance_bias: 60.0      # 32.0
@@ -43,4 +41,4 @@ DWAPlannerROS:
   oscillation_reset_dist: 0.05  # default 0.05
  
 # Global Plan Parameters
-  prune_plan: false
+  prune_plan: true
