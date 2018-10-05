@@ -100,7 +100,7 @@ class PatrolNav():
             n_goals    += 1
  
             # Allow 5 minutes to get there
-            finished_within_time = self.move_base.wait_for_result(rospy.Duration(30))
+            finished_within_time = self.move_base.wait_for_result(rospy.Duration(60))
             # Check for success or failure
             if not finished_within_time:
                 self.move_base.cancel_goal()
